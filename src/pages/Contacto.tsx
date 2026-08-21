@@ -554,7 +554,7 @@ const Contacto = () => {
       >
         <Typography variant="body" className="text-text-muted">
           Hemos recibido tu solicitud correctamente. Nuestro equipo técnico
-          revisará los detalles y se pondrá en contacto contigo en menos de 24
+          revisará los detalles y se pondrá en contacto contigo en menos de 72
           horas.
         </Typography>
       </Modal>
