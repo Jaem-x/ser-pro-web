@@ -216,7 +216,7 @@ const Nosotros = () => {
 
       {/* Equipo */}
       <section className="py-24">
-        <Container className="max-w-[1400px]">
+        <Container className="max-w-[1600px]">
           <div className="text-center mb-16">
             <Typography variant="heading2" className="mb-4">
               El Equipo Core
@@ -248,7 +248,7 @@ const Nosotros = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
                   </div>
                   <div className="p-4 xl:p-5">
-                    <Typography variant="heading3" className="text-base xl:text-lg mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
+                    <Typography variant="heading3" className="text-lg mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
                       {member.name}
                     </Typography>
                     <Typography
