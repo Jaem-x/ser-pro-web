@@ -259,7 +259,7 @@ const Nosotros = () => {
                     </Typography>
                     <Typography
                       variant="muted"
-                      className="text-xs mb-6 line-clamp-2"
+                      className="text-xs mb-6"
                     >
                       {member.bio}
                     </Typography>
