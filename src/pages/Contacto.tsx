@@ -144,6 +144,7 @@ const contactSchema = z.object({
       /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.,!?$€£%()#+\-*&]+$/,
       "No se permiten caracteres especiales de riesgo",
     ),
+  bot_field: z.string().optional(),
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
@@ -200,6 +201,25 @@ const Contacto = () => {
   const selectedService = watch("service");
 
   const onSubmit = async (data: ContactFormValues) => {
+    // 1. Honeypot check (Si el bot llena el campo oculto, simulamos éxito)
+    if (data.bot_field) {
+      setStatus("success");
+      setShowModal(true);
+      reset();
+      setTimeout(() => setStatus("idle"), 5000);
+      return;
+    }
+
+    // 2. Rate limit (5 minutos por localStorage)
+    const lastSubmission = localStorage.getItem("last_contact_time");
+    if (lastSubmission) {
+      const timeDiff = Date.now() - parseInt(lastSubmission, 10);
+      if (timeDiff < 5 * 60 * 1000) {
+        alert("Por motivos de seguridad, por favor espera 5 minutos antes de enviar otro mensaje.");
+        return;
+      }
+    }
+
     setStatus("loading");
 
     try {
@@ -216,6 +236,9 @@ const Contacto = () => {
       ]);
 
       if (error) throw error;
+
+      // Guardar tiempo de envío exitoso
+      localStorage.setItem("last_contact_time", Date.now().toString());
 
       setStatus("success");
       setShowModal(true);
@@ -305,6 +328,17 @@ const Contacto = () => {
           <div className="lg:col-span-2" id="contacto-form">
             <Card className="p-8 md:p-10">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                
+                {/* Honeypot field - Trampa oculta para bots */}
+                <input
+                  type="text"
+                  {...register("bot_field")}
+                  className="opacity-0 absolute -z-10 w-0 h-0"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-text-muted">
