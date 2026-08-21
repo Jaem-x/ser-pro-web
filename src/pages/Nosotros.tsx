@@ -67,12 +67,12 @@ const values = [
 const team = [
   {
     name: "Octavio Contreras",
-    role: "Co-founder & Head of Backend",
+    role: "Senior SDET & Performance & Observability",
     image: OctavioImg,
     bio: "Experto en arquitecturas distribuidas y cloud computing con más de 12 años en la industria.",
   },
   {
-    name: "Ricardo Salinas",
+    name: "Ricardo Escalante",
     role: "Co-founder & Lead Frontend Engineer",
     image: RickImg,
     bio: "Especialista en interfaces reactivas y sistemas de diseño a gran escala.",
@@ -85,13 +85,13 @@ const team = [
   },
   {
     name: "Daniel Uscanga",
-    role: "Co-founder & Senior DevOps Engineer",
+    role: "Líder Tecnico & DevOps Engineer",
     image: DanielImg,
     bio: "Garantizando despliegues continuos y estabilidad en infraestructuras críticas.",
   },
   {
     name: "Enrique Baruch",
-    role: "Co-founder & Senior Automation Engineer",
+    role: "Senior Automation Engineer",
     image: BaruchImg,
     bio: "Liderando la visión del producto y asegurando la entrega de valor al cliente.",
   },
