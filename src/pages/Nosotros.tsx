@@ -99,7 +99,7 @@ const team = [
 
 const Nosotros = () => {
   return (
-    <div className="pb-24">
+    <div className="pb-0">
       {/* Hero Nosotros */}
       <section className="pt-20 pb-24 bg-surface/30 border-b border-white/5">
         <Container>
