@@ -156,7 +156,7 @@ const Nosotros = () => {
               <div className="space-y-4 pt-8">
                 <div className="h-60 bg-surface rounded-2xl border border-white/10 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-3xl font-bold font-heading">8+</div>
+                    <div className="text-3xl font-bold font-heading">3+</div>
                     <div className="text-xs uppercase tracking-widest text-text-muted">
                       Años Exp.
                     </div>
