@@ -99,7 +99,7 @@ const team = [
 
 const Nosotros = () => {
   return (
-    <div className="pb-0">
+    <div className="pb-0"> {/* espacio para el footer */}
       {/* Hero Nosotros */}
       <section className="pt-20 pb-24 bg-surface/30 border-b border-white/5">
         <Container>
