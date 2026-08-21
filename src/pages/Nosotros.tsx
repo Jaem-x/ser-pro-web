@@ -216,7 +216,7 @@ const Nosotros = () => {
 
       {/* Equipo */}
       <section className="py-24">
-        <Container>
+        <Container className="max-w-[1400px]">
           <div className="text-center mb-16">
             <Typography variant="heading2" className="mb-4">
               El Equipo Core
@@ -229,11 +229,10 @@ const Nosotros = () => {
               complejos.
             </Typography>
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 xl:gap-6">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}
-                className="w-full sm:w-[calc(50%-1rem)] lg:w-72 xl:w-80 flex-shrink-0"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -248,8 +247,8 @@ const Nosotros = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
                   </div>
-                  <div className="p-6">
-                    <Typography variant="heading3" className="text-lg mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
+                  <div className="p-4 xl:p-5">
+                    <Typography variant="heading3" className="text-base xl:text-lg mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
                       {member.name}
                     </Typography>
                     <Typography
