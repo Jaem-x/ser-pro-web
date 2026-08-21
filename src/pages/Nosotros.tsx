@@ -73,9 +73,9 @@ const team = [
   },
   {
     name: "Ricardo Escalante",
-    role: "Co-founder & Lead Frontend Engineer",
+    role: "Senior Developer Engineer Python",
     image: RickImg,
-    bio: "Especialista en interfaces reactivas y sistemas de diseño a gran escala.",
+    bio: "Especialista en desarrollo de software con python y arquitecturas distribuidas.",
   },
   {
     name: "Alfonso Estrada",
