@@ -79,7 +79,7 @@ const team = [
   },
   {
     name: "Alfonso Estrada",
-    role: "Founder-CEO & Lead QA Automation ",
+    role: "Founder-CEO & Lead QA Automation Engineer",
     image: AlfonsoImg,
     bio: "Apasionado por la calidad y la automatización exhaustiva de procesos de software.",
   },
