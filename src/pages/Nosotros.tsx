@@ -138,7 +138,7 @@ const Nosotros = () => {
               <div className="space-y-4">
                 <div className="h-40 bg-primary/10 rounded-2xl border border-primary/20 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-3xl font-bold font-heading">50+</div>
+                    <div className="text-3xl font-bold font-heading">10+</div>
                     <div className="text-xs uppercase tracking-widest text-text-muted">
                       Proyectos
                     </div>
