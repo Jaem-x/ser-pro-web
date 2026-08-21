@@ -229,10 +229,11 @@ const Nosotros = () => {
               complejos.
             </Typography>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}
+                className="w-full sm:w-[calc(50%-1rem)] lg:w-72 xl:w-80 flex-shrink-0"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -248,7 +249,7 @@ const Nosotros = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
                   </div>
                   <div className="p-6">
-                    <Typography variant="heading3" className="text-lg mb-1">
+                    <Typography variant="heading3" className="text-lg mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
                       {member.name}
                     </Typography>
                     <Typography
