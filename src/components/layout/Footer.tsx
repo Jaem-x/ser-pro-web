@@ -142,7 +142,7 @@ export const Footer = () => {
                 <MailIcon />
                 <span>servicio.consultoria.mx@gmail.com</span>
               </li>
-              <li>Cancun, Mexico</li>
+              {/*<li>Cancun, Mexico</li>*/}
               {/* <li>[TELEFONO]</li> */}
             </ul>
           </div>
