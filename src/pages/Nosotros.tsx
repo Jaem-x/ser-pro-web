@@ -69,7 +69,7 @@ const team = [
     name: "Octavio Contreras",
     role: "Senior SDET & Performance & Observability",
     image: OctavioImg,
-    bio: "Experto en arquitecturas distribuidas y cloud computing con más de 12 años en la industria.",
+    bio: "Python & Cloud Automation (Boto3/DynamoDB) | Performance & Observability (Dynatrace)",
   },
   {
     name: "Ricardo Escalante",
