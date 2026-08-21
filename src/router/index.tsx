@@ -22,4 +22,4 @@ export const router = createBrowserRouter([
       { path: 'cookies', element: <Cookies /> },
     ]
   },
-], { basename: '/ser-pro-web' });
+], { basename: import.meta.env.BASE_URL });
